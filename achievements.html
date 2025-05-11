@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achievements</title>
+    <title>Research Interests</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <style>
-        .arrow-list {
-            list-style-type: none; 
-            padding-left: 20px;    
+        .research-interest {
+            display: flex;
+            align-items: center; /* Vertically center image and text */
+            margin-bottom: 20px; /* Space between research areas */
         }
 
-        .arrow-list li::before {
-            content: "→";         
-            padding-right: 10px;   
-            color: blue;           
+        .research-interest.reverse {
+            flex-direction: row-reverse; /* Reverse for alternating layout */
         }
 
-        .arrow-list li {
-            font-size: 1.3em; /* Match body text size from index.html */
-            margin-bottom: 10px; /* Consistent gap between list items */
+        .research-interest img {
+            width: 300px; /* Fixed width for images */
+            height: auto;
+            border-radius: 8px; /* Rounded corners */
+            margin-right: 20px; /* Space for left-aligned images */
+        }
+
+        .research-interest.reverse img {
+            margin-right: 0; /* Remove right margin for right-aligned images */
+            margin-left: 20px; /* Space for right-aligned images */
+        }
+
+        .research-text {
+            flex: 1; /* Fill remaining space */
+        }
+
+        .research-text p {
+            font-size: 1.3em; /* Match body text size */
+            margin-bottom: 10px; /* Consistent gap */
+        }
+
+        .research-number {
+            font-size: 1.3em; /* Match body text size */
+            font-weight: bold; /* Bold for emphasis */
+            margin-right: 10px; /* Space before text */
         }
 
         header h1 {
@@ -59,22 +80,19 @@
 
     <main>
         <section>
-            <h2>Achievements</h2>
-            <ul class="arrow-list">
-                <li><strong>Observation of a giant magnetoelectric effect in perovskite oxides</strong>, The transition of Co3+ ions from high-spin to low-spin states gives rise to a giant magnetoelectric coupling effect in composites comprising BiCoO3. The prominent orbital ordering of V4+ ions within the PbVO3-based perovskite composite predominantly contributes to its elevated magnetoelectric coupling.</li>
-                <li><strong>Discovery of multiferroicity in bismuth-based double perovskites</strong> The elucidated crystal structure of Bi2XTiO6 (X = Fe, Mn, Ni) double perovskites reveals the presence of d0 + dn electron configurations, leading to the coexistence of antiferromagnetic and ferroelectric orderings.</li>
-                <li><strong>Discovery of multiferroicity in bismuth-based double perovskites</strong> The elucidated crystal structure of Bi2XTiO6 (X = Fe, Mn, Ni) double perovskites reveals the presence of d0 + dn electron configurations, leading to the coexistence of antiferromagnetic and ferroelectric orderings.</li>
-                <li><strong>Metal-insulator transition in hole- and electron-doped nickelates</strong> Hole and electron-doped Ruddlesden–Popper nickelates exhibit a metal-to-insulator transition and the presence of an average valency at the nickel site.</li>
-                <li><strong>Exploring the chemistry of ozonation in group IV monolayers</strong> The group-IV monolayers exhibit distinct responses to ozonation, characterized by the rapid dissociation of O3 in silicene, while graphene, germanene, and stanene demonstrate oxidation resistance. Computational simulations have been employed to elucidate the potential impact of ozonation on their electronic and photonic properties.</li>
-                <li><strong>Orientation-dependent mechanical response of graphene/BN heterostructures</strong> Graphene/BN hybrid van der Waals structures offer multifunctional capabilities, with mechanical strength influenced by constituent monolayer orientation. Mechanical responses vary significantly in the out-of-plane direction due to interlayer interactions but remain robust in the in-plane direction.</li>
-                <li><strong>Orientation-dependent mechanical response of graphene/BN heterostructures</strong> Graphene/BN hybrid van der Waals structures offer multifunctional capabilities, with mechanical strength influenced by constituent monolayer orientation. Mechanical responses vary significantly in the out-of-plane direction due to interlayer interactions but remain robust in the in-plane direction.</li>
-                <li><strong>Understanding the chemical stability and mechanical response of WN nanosheets</strong> The anisotropic mechanical strength in WN nanosheets can be ascribed to directional covalent bonding between W and N atoms. The opposing stabilities of W- and N-terminated surfaces in O2 and H2O atmospheres imply that precise growth conditions are essential to attain exceptional mechanical robustness.</li>
-                <li><strong>Ternary nitride materials for solar absorbers</strong> The simulated structural, optical, and electrical properties, combined with collaborative experimental measurements, highlight the potential of MgSnN2 and ZnSnN2 for advancements in solar absorbers and LEDs.</li>
-                <li><strong>Discovery of materials for thermoelectric applications</strong> Density functional theory calculations have been conducted to unveil promising thermoelectric responses in bulk half-Heusler compounds, as well as in novel AuX (X = Cu, Ag) and XO2 (X = Pd, Pt) monolayers.</li>
-                <li><strong>pH dependent adhesion of Salicylhydroxamic acid</strong> Simulations were conducted on conjugated complexes involving the silica surface and the adhesive acid molecule to assess the pH dependency of SHAM–Silica interactions. The deprotonation of Salicylhydroxamic acid was identified as the underlying mechanism responsible for the emergence of novel adhesive properties.</li>
-                <li><strong>Indirect exchange interaction leads to large lattice contribution to magnetocaloric entropy change</strong> Spin-lattice dynamics simulations have been utilized to demonstrate that indirect exchange interactions result in extended-range spin-phonon coupling, which can engender a significant lattice contribution to magnetocaloric entropy changes.</li>
-                <li><strong>Discovery of materials for magnetocaloric applications</strong> Machine learning predictions, coupled with atomic spin dynamics calculations, have been utilized to explore promising magnetocaloric materials within the realm of rare earth-based compounds.</li>
-            </ul>
+            <h2>Research Interests</h2>
+            <div class="research-interest">
+                <img src="https://via.placeholder.com/300x200?text=Multiferroic+Oxides" alt="Multiferroic Oxides">
+                <div class="research-text">
+                    <p><span class="research-number">1.</span>My research on multiferroic magnetoelectric oxides explores materials that simultaneously exhibit ferroelectric and magnetic properties, enabling unique coupling between electric and magnetic orders. By leveraging first-principles modeling and computational techniques like density functional theory, I investigate the structural, electronic, and magnetic characteristics of these oxides to uncover mechanisms driving giant magnetoelectric effects. My work focuses on designing novel multiferroic materials with enhanced coupling for applications in energy-efficient technologies, such as non-volatile memory, spintronics, and sensors, contributing to the advancement of sustainable, next-generation devices.</p>
+                </div>
+            </div>
+            <div class="research-interest reverse">
+                <img src="https://via.placeholder.com/300x200?text=Magnetocaloric+Materials" alt="Magnetocaloric Materials">
+                <div class="research-text">
+                    <p><span class="research-number">2.</span>My work on magnetocaloric materials investigates compounds with significant entropy changes under magnetic fields, ideal for energy-efficient refrigeration and thermal management. Using spin-lattice dynamics and machine learning, I explore rare earth-based oxides and two-dimensional magnets to enhance magnetocaloric effects. This research aims to develop sustainable cooling technologies and advance energy-efficient systems. [Placeholder: Please provide actual content for this research area.]</p>
+                </div>
+            </div>
         </section>
     </main>
 
