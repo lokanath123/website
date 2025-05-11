@@ -11,7 +11,8 @@
         .research-interest {
             display: flex;
             align-items: center; /* Vertically center image and text */
-            margin-bottom: 20px; /* Space between research areas */
+            margin: 0 auto 20px; /* Center with left/right margins, keep bottom margin */
+            max-width: 1200px; /* Constrain width, match index.html */
         }
 
         .research-interest.reverse {
@@ -37,6 +38,13 @@
         .research-text p {
             font-size: 1.3em; /* Match body text size */
             margin-bottom: 10px; /* Consistent gap */
+            text-align: justify; /* Justify text */
+            text-justify: auto; /* Improve justification rendering */
+        }
+
+        .research-text p span.research-number {
+            display: inline-block; /* Keep numbering left-aligned */
+            text-align: left; /* Prevent justification */
         }
 
         .research-number {
