@@ -8,51 +8,35 @@
 </head>
 <body>
     <style>
-        .about-container {
-            display: flex;
-            align-items: center; /* Vertically center image and text */
-            gap: 20px;
-            margin: 0 auto;
-            padding: 0 40px;
-            max-width: 1200px;
-        }
-
-        #achievements {
-            margin-top: 30px;
-        }
-
-        #achievements h2 {
-            font-size: 2rem;
-            color: #333;
-        }
-
-        #achievements ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        #achievements li {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        #achievements li strong {
-            color: #0056b3;
-        }
-
         .arrow-list {
             list-style-type: none; 
-            padding-left: 20px; 
+            padding-left: 20px;    
         }
 
         .arrow-list li::before {
-            content: "→";    
+            content: "→";         
             padding-right: 10px;   
             color: blue;           
         }
 
+        .arrow-list li {
+            font-size: 1.3em; /* Match body text size from index.html */
+            margin-bottom: 10px; /* Consistent gap between list items */
+        }
+
         header h1 {
-            margin-bottom: 20px; /* Add same gap as in index.html */
+            font-size: 2.5em; /* Increase size for LOKANATH PATRA */
+            margin-bottom: 20px; /* Same gap as in other pages */
+        }
+
+        nav a {
+            font-size: 1.2em; /* Increase size for navigation items */
+        }
+
+        main h2 {
+            font-size: 2.5em; /* Standardize heading size */
+            margin-bottom: 10px; /* Gap below heading */
+            text-align: center; /* Center heading */
         }
     </style>
     <header>
@@ -75,21 +59,21 @@
 
     <main>
         <section>
-            <h2>Achievements</h2><br>
+            <h2>Achievements</h2>
             <ul class="arrow-list">
-                <li><strong>Observation of a giant magnetoelectric effect in perovskite oxides</strong>, The transition of Co3+ ions from high-spin to low-spin states gives rise to a giant magnetoelectric coupling effect in composites comprising BiCoO3. The prominent orbital ordering of V4+ ions within the PbVO3-based perovskite composite predominantly contributes to its elevated magnetoelectric coupling.</li><br>
-                <li><strong>Discovery of multiferroicity in bismuth-based double perovskites</strong> The elucidated crystal structure of Bi2XTiO6 (X = Fe, Mn, Ni) double perovskites reveals the presence of d0 + dn electron configurations, leading to the coexistence of antiferromagnetic and ferroelectric orderings.</li><br>
-                <li><strong>Discovery of multiferroicity in bismuth-based double perovskites</strong> The elucidated crystal structure of Bi2XTiO6 (X = Fe, Mn, Ni) double perovskites reveals the presence of d0 + dn electron configurations, leading to the coexistence of antiferromagnetic and ferroelectric orderings.</li><br>
-                <li><strong>Metal-insulator transition in hole- and electron-doped nickelates</strong> Hole and electron-doped Ruddlesden–Popper nickelates exhibit a metal-to-insulator transition and the presence of an average valency at the nickel site.</li><br>
-                <li><strong>Exploring the chemistry of ozonation in group IV monolayers</strong> The group-IV monolayers exhibit distinct responses to ozonation, characterized by the rapid dissociation of O3 in silicene, while graphene, germanene, and stanene demonstrate oxidation resistance. Computational simulations have been employed to elucidate the potential impact of ozonation on their electronic and photonic properties.</li><br>
-                <li><strong>Orientation-dependent mechanical response of graphene/BN heterostructures</strong> Graphene/BN hybrid van der Waals structures offer multifunctional capabilities, with mechanical strength influenced by constituent monolayer orientation. Mechanical responses vary significantly in the out-of-plane direction due to interlayer interactions but remain robust in the in-plane direction.</li><br>
-                <li><strong>Orientation-dependent mechanical response of graphene/BN heterostructures</strong> Graphene/BN hybrid van der Waals structures offer multifunctional capabilities, with mechanical strength influenced by constituent monolayer orientation. Mechanical responses vary significantly in the out-of-plane direction due to interlayer interactions but remain robust in the in-plane direction.</li><br>
-                <li><strong>Understanding the chemical stability and mechanical response of WN nanosheets</strong> The anisotropic mechanical strength in WN nanosheets can be ascribed to directional covalent bonding between W and N atoms. The opposing stabilities of W- and N-terminated surfaces in O2 and H2O atmospheres imply that precise growth conditions are essential to attain exceptional mechanical robustness.</li><br>
-                <li><strong>Ternary nitride materials for solar absorbers</strong> The simulated structural, optical, and electrical properties, combined with collaborative experimental measurements, highlight the potential of MgSnN2 and ZnSnN2 for advancements in solar absorbers and LEDs.</li><br>
-                <li><strong>Discovery of materials for thermoelectric applications</strong> Density functional theory calculations have been conducted to unveil promising thermoelectric responses in bulk half-Heusler compounds, as well as in novel AuX (X = Cu, Ag) and XO2 (X = Pd, Pt) monolayers.</li><br>
-                <li><strong>pH dependent adhesion of Salicylhydroxamic acid</strong> Simulations were conducted on conjugated complexes involving the silica surface and the adhesive acid molecule to assess the pH dependency of SHAM–Silica interactions. The deprotonation of Salicylhydroxamic acid was identified as the underlying mechanism responsible for the emergence of novel adhesive properties.</li><br>
-                <li><strong>Indirect exchange interaction leads to large lattice contribution to magnetocaloric entropy change</strong> Spin-lattice dynamics simulations have been utilized to demonstrate that indirect exchange interactions result in extended-range spin-phonon coupling, which can engender a significant lattice contribution to magnetocaloric entropy changes.</li><br>
-                <li><strong>Discovery of materials for magnetocaloric applications</strong> Machine learning predictions, coupled with atomic spin dynamics calculations, have been utilized to explore promising magnetocaloric materials within the realm of rare earth-based compounds.</li><br>
+                <li><strong>Observation of a giant magnetoelectric effect in perovskite oxides</strong>, The transition of Co3+ ions from high-spin to low-spin states gives rise to a giant magnetoelectric coupling effect in composites comprising BiCoO3. The prominent orbital ordering of V4+ ions within the PbVO3-based perovskite composite predominantly contributes to its elevated magnetoelectric coupling.</li>
+                <li><strong>Discovery of multiferroicity in bismuth-based double perovskites</strong> The elucidated crystal structure of Bi2XTiO6 (X = Fe, Mn, Ni) double perovskites reveals the presence of d0 + dn electron configurations, leading to the coexistence of antiferromagnetic and ferroelectric orderings.</li>
+                <li><strong>Discovery of multiferroicity in bismuth-based double perovskites</strong> The elucidated crystal structure of Bi2XTiO6 (X = Fe, Mn, Ni) double perovskites reveals the presence of d0 + dn electron configurations, leading to the coexistence of antiferromagnetic and ferroelectric orderings.</li>
+                <li><strong>Metal-insulator transition in hole- and electron-doped nickelates</strong> Hole and electron-doped Ruddlesden–Popper nickelates exhibit a metal-to-insulator transition and the presence of an average valency at the nickel site.</li>
+                <li><strong>Exploring the chemistry of ozonation in group IV monolayers</strong> The group-IV monolayers exhibit distinct responses to ozonation, characterized by the rapid dissociation of O3 in silicene, while graphene, germanene, and stanene demonstrate oxidation resistance. Computational simulations have been employed to elucidate the potential impact of ozonation on their electronic and photonic properties.</li>
+                <li><strong>Orientation-dependent mechanical response of graphene/BN heterostructures</strong> Graphene/BN hybrid van der Waals structures offer multifunctional capabilities, with mechanical strength influenced by constituent monolayer orientation. Mechanical responses vary significantly in the out-of-plane direction due to interlayer interactions but remain robust in the in-plane direction.</li>
+                <li><strong>Orientation-dependent mechanical response of graphene/BN heterostructures</strong> Graphene/BN hybrid van der Waals structures offer multifunctional capabilities, with mechanical strength influenced by constituent monolayer orientation. Mechanical responses vary significantly in the out-of-plane direction due to interlayer interactions but remain robust in the in-plane direction.</li>
+                <li><strong>Understanding the chemical stability and mechanical response of WN nanosheets</strong> The anisotropic mechanical strength in WN nanosheets can be ascribed to directional covalent bonding between W and N atoms. The opposing stabilities of W- and N-terminated surfaces in O2 and H2O atmospheres imply that precise growth conditions are essential to attain exceptional mechanical robustness.</li>
+                <li><strong>Ternary nitride materials for solar absorbers</strong> The simulated structural, optical, and electrical properties, combined with collaborative experimental measurements, highlight the potential of MgSnN2 and ZnSnN2 for advancements in solar absorbers and LEDs.</li>
+                <li><strong>Discovery of materials for thermoelectric applications</strong> Density functional theory calculations have been conducted to unveil promising thermoelectric responses in bulk half-Heusler compounds, as well as in novel AuX (X = Cu, Ag) and XO2 (X = Pd, Pt) monolayers.</li>
+                <li><strong>pH dependent adhesion of Salicylhydroxamic acid</strong> Simulations were conducted on conjugated complexes involving the silica surface and the adhesive acid molecule to assess the pH dependency of SHAM–Silica interactions. The deprotonation of Salicylhydroxamic acid was identified as the underlying mechanism responsible for the emergence of novel adhesive properties.</li>
+                <li><strong>Indirect exchange interaction leads to large lattice contribution to magnetocaloric entropy change</strong> Spin-lattice dynamics simulations have been utilized to demonstrate that indirect exchange interactions result in extended-range spin-phonon coupling, which can engender a significant lattice contribution to magnetocaloric entropy changes.</li>
+                <li><strong>Discovery of materials for magnetocaloric applications</strong> Machine learning predictions, coupled with atomic spin dynamics calculations, have been utilized to explore promising magnetocaloric materials within the realm of rare earth-based compounds.</li>
             </ul>
         </section>
     </main>
