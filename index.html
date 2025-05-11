@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <style>
+section {
+    border-bottom: 2px solid blue;
+    padding-bottom: 20px;  
+    margin-bottom: 20px;   
+}
+
+.arrow-list {
+    list-style-type: none; 
+    padding-left: 20px;    
+}
+
+.arrow-list li::before {
+    content: "→";        
+    padding-right: 10px;  
+    color: blue;           
+}
+
+    </style>
+    <header>
+        <div class="container">
+            <h1>LOKANATH PATRA</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="papers.html">Research Papers</a></li>
+                    <li><a href="achievements.html">Achievements</a></li> 
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="random.html">Random</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="moving-text">
+            <p>🚨 New Paper Published! 🚨 For more details on my latest paper, click <a href="https://doi.org/10.1063/5.0206855" target="_blank">here</a>!</p>
+        </section>
+
+        <section class="intro">
+            <h2>About Me</h2><br>
+            <img src="assets\lokanath_photo.jpg" alt="Lokanath Patra" class="center-image" style="width:200px;height:auto;">
+            <ul class="arrow-list">
+                <li>I am a research engineer at the Georgia Institute of Technology, specializing in first-principles modeling of magnetic and magnetoelectric multiferroic materials. With a Ph.D. in Physics from the Central University of Tamil Nadu, India, my research focuses on understanding the properties of materials at the micro- and nanoscale using density functional theory (DFT) to advance sustainable energy technologies.</li>
+                <li>Over the years, I have worked on modeling the mechanical stability of 2D materials, developing computational techniques for solid-state magnetic refrigeration, and training machine learning potentials for Si-Ge systems, including interfaces and amorphous structures. I am passionate about bridging fundamental research with real-world applications, contributing to the discovery and optimization of novel materials for energy-efficient technologies.</li>
+            </ul>
+        </section>
+        <section>
+        <h2>Professional Skills</h2><br>
+        <ul class="arrow-list">
+            <li><strong>Languages</strong> : Strong reading, writing, and speaking competencies in English, Hindi, and Odia (Native
+                language)..</li>
+            <li><strong>Simulation</strong> : Density Functional Theory (DFT), ab initio and classical molecular dynamics (MD),
+                spin-lattice dynamics (SLD), Monte Carlo, Non-Equilibrium Green Function (NEGF)
+                simulations</li>
+            <li><strong>Research</strong> : Solving complex lattice and magnetic structures, electronic, optical, thermal,
+                mechanical, and magneto-electric/caloric/optical properties, orbital ordering,
+                spontaneous electrical polarization.</li>
+            <li><strong>Programming</strong> : C, C++, FORTRAN, Python</li>
+            <li><strong>Codes</strong> : VASP, WIEN2K, CRYSTAL17, Quantum Espresso, CALYPSO, LAMMPS, VAMPIRE, UppASD, SPR-KKR, QuantumATK.</li>
+            <li><strong>Analysis</strong> : VESTA, Xmgrace, Origin, p4vasp, OVITO, Phonopy, XCrySDen, VMD</li>
+            <li><strong>Misc.</strong> : Academic research, collaborative research, teaching, training, consultation, LATEX
+                typesetting, and publishing.</li>
+        </ul>
+
+        </section>
+
+        <section>
+            <h2>Education</h2><br>
+            <ul class="arrow-list">
+                <li><strong>2013 – 2019</strong> : Ph.D. in Physics, Central University of Tamil Nadu, India Area: Condensed Matter
+                    Physics (Computational).
+                    Thesis title: First Principles Modeling of Multiferroics with Giant Magnetoelectric Coupling.</li>
+                <li><strong>2011 – 2013</strong> : M.Sc. in Physics, Pondicherry University, India, Specialization: Condensed Matter
+                    Physics (Experimental)
+                    Thesis title: Magnetic and Dielectric Properties of Co1.75Fe1.25O4 Spinel Ferrite Prepared by
+                    Co-Precipitation Method.</li>
+                <li><strong>2008 – 2011</strong> : B.Sc. in Physics, Ravenshaw University, India</li>
+            </ul>
+    
+            </section>
+    
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>Download my <a href="assets\Patra_Lokanath_CV.pdf" target="_blank">CV</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
