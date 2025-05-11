@@ -8,22 +8,22 @@
 </head>
 <body>
     <style>
-section {
-    border-bottom: 2px solid blue;
-    padding-bottom: 20px;  
-    margin-bottom: 20px;   
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.arrow-list {
-    list-style-type: none; 
-    padding-left: 20px;    
+.photo img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
 }
 
-.arrow-list li::before {
-    content: "→";        
-    padding-right: 10px;  
-    color: blue;           
+.about-text {
+    flex: 1;
 }
+
 
     </style>
     <header>
@@ -49,14 +49,20 @@ section {
             <p>🚨 New Paper Published! 🚨 For more details on my latest paper, click <a href="https://doi.org/10.1063/5.0206855" target="_blank">here</a>!</p>
         </section>
 
-        <section class="intro">
+<section class="intro">
+    <div class="about-container">
+        <div class="photo">
+            <img src="assets/lokanath_photo.jpg" alt="Lokanath Patra">
+        </div>
+        <div class="about-text">
             <h2>About Me</h2><br>
-            <img src="assets\lokanath_photo.jpg" alt="Lokanath Patra" class="center-image" style="width:200px;height:auto;">
             <ul class="arrow-list">
                 <li>I am a research engineer at the Georgia Institute of Technology, specializing in first-principles modeling of magnetic and magnetoelectric multiferroic materials. With a Ph.D. in Physics from the Central University of Tamil Nadu, India, my research focuses on understanding the properties of materials at the micro- and nanoscale using density functional theory (DFT) to advance sustainable energy technologies.</li>
                 <li>Over the years, I have worked on modeling the mechanical stability of 2D materials, developing computational techniques for solid-state magnetic refrigeration, and training machine learning potentials for Si-Ge systems, including interfaces and amorphous structures. I am passionate about bridging fundamental research with real-world applications, contributing to the discovery and optimization of novel materials for energy-efficient technologies.</li>
             </ul>
-        </section>
+        </div>
+    </div>
+</section>
         <section>
         <h2>Professional Skills</h2><br>
         <ul class="arrow-list">
