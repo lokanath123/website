@@ -5,24 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-<style>
-    header h1 {
-        font-size: 2.5em; /* Increase size for LOKANATH PATRA */
-        margin-bottom: 20px; /* Same gap as in other pages */
-    }
+    <style>
+        header h1 {
+            font-size: 2.5em; /* Increase size for LOKANATH PATRA */
+            margin-bottom: 20px; /* Same gap as in other pages */
+        }
 
-    nav a {
-        font-size: 1.2em; /* Increase size for navigation items */
-    }
+        nav a {
+            font-size: 1.2em; /* Increase size for navigation items */
+        }
 
-    main h2 {
-        font-size: 2.5em; /* Standardize heading size */
-        margin-bottom: 10px; /* Gap below heading */
-        text-align: center; /* Center heading */
-    }
-</style>
+        main h2 {
+            font-size: 2.5em; /* Standardize heading size */
+            margin-bottom: 10px; /* Gap below heading */
+            text-align: center; /* Center heading */
+        }
+
+        .contact-card {
+            background-color: #f9f9f9; /* Light background */
+            border: 1px solid #ddd; /* Subtle border */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Inner spacing */
+            max-width: 600px; /* Constrain width */
+            margin: 20px auto; /* Center horizontally */
+            animation: fadeIn 1s ease-in; /* Fade-in animation */
+        }
+
+        .contact-card p, .contact-card ul li {
+            font-size: 1.3em; /* Match body text size from index.html */
+            margin-bottom: 10px; /* Consistent gap */
+        }
+
+        .contact-card i {
+            font-size: 1.3em; /* Icon size */
+            margin-right: 10px; /* Space between icon and text */
+            color: #0056b3; /* Blue color for icons */
+        }
+
+        a:hover {
+            color: #0056b3; /* Blue on hover */
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
     <header>
         <div class="container">
             <h1>LOKANATH PATRA</h1>
@@ -41,13 +73,16 @@
         </div>
     </header>
     <main>
-        <h1>Contact Me</h1><br>
-        <p>Email: 
-           <ul><li><a href="mailto:youremail@example.com">lokanath.patra007@gmail.com</a></li></ul></p><br>
-        <p>LinkedIn: 
-           <ul><li><a href="https://www.linkedin.com/in/lokanath-patra-39745596?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn Profile</a></li></ul></p><br>
-        <p>GitHub: 
-           <ul><li><a href="https://github.com/lokanath123" target="_blank">GitHub Profile</a></li></ul></p><br>
+        <h2>Contact Me</h2>
+        <div class="contact-card">
+            <p>Feel free to reach out to discuss research, collaborations, or opportunities!</p>
+            <p><i class="fas fa-map-marker-alt"></i>Lokanath Patra, George W. Woodruff School of Mechanical Engineering, Georgia Institute of Technology, Atlanta, Georgia 30332, United States</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i><a href="mailto:lokanath.patra007@gmail.com">lokanath.patra007@gmail.com</a></li>
+                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/lokanath-patra-39745596?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn Profile</a></li>
+                <li><i class="fab fa-github"></i><a href="https://github.com/lokanath123" target="_blank">GitHub Profile</a></li>
+            </ul>
+        </div>
     </main>
 
     <footer>
