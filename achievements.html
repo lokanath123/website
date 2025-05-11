@@ -10,12 +10,17 @@
     <style>
         .research-interest {
             display: flex;
-            align-items: center; /* Vertically center image and text */
-            margin: 0 auto 20px; /* Center with left/right margins, keep bottom margin */
+            flex-direction: column; /* Stack subheading above content */
+            margin: 0 auto 20px; /* Center with left/right margins */
             max-width: 1000px; /* Constrain width */
         }
 
-        .research-interest.reverse {
+        .content-row {
+            display: flex;
+            align-items: center; /* Vertically center image and text */
+        }
+
+        .content-row.reverse {
             flex-direction: row-reverse; /* Reverse for alternating layout */
         }
 
@@ -26,7 +31,7 @@
             margin-right: 20px; /* Space for left-aligned images */
         }
 
-        .research-interest.reverse img {
+        .content-row.reverse img {
             margin-right: 0; /* Remove right margin for right-aligned images */
             margin-left: 20px; /* Space for right-aligned images */
         }
@@ -48,6 +53,7 @@
             justify-content: center; /* Center horizontally */
             margin-bottom: 10px; /* Space below group */
             line-height: 1.2; /* Normalize line height */
+            width: 100%; /* Span full width */
         }
 
         .research-number {
@@ -101,23 +107,27 @@
         <section>
             <h2>Research Interests</h2>
             <div class="research-interest">
-                <img src="assets/multiferroic.png" alt="Multiferroic Oxides">
-                <div class="research-text">
-                    <div class="subheading-group">
-                        <span class="research-number">1.</span>
-                        <h3>Multiferroic Magnetoelectric Oxides</h3>
+                <div class="subheading-group">
+                    <span class="research-number">1.</span>
+                    <h3>Multiferroic Magnetoelectric Oxides</h3>
+                </div>
+                <div class="content-row">
+                    <img src="assets/multiferroic.png" alt="Multiferroic Oxides">
+                    <div class="research-text">
+                        <p>My research on multiferroic magnetoelectric oxides explores materials that simultaneously exhibit ferroelectric and magnetic properties, enabling unique coupling between electric and magnetic orders. By leveraging first-principles modeling and computational techniques like density functional theory, I investigate the structural, electronic, and magnetic characteristics of these oxides to uncover mechanisms driving giant magnetoelectric effects. My work focuses on designing novel multiferroic materials with enhanced coupling for applications in energy-efficient technologies, such as non-volatile memory, spintronics, and sensors, contributing to the advancement of sustainable, next-generation devices.</p>
                     </div>
-                    <p>My research on multiferroic magnetoelectric oxides explores materials that simultaneously exhibit ferroelectric and magnetic properties, enabling unique coupling between electric and magnetic orders. By leveraging first-principles modeling and computational techniques like density functional theory, I investigate the structural, electronic, and magnetic characteristics of these oxides to uncover mechanisms driving giant magnetoelectric effects. My work focuses on designing novel multiferroic materials with enhanced coupling for applications in energy-efficient technologies, such as non-volatile memory, spintronics, and sensors, contributing to the advancement of sustainable, next-generation devices.</p>
                 </div>
             </div>
             <div class="research-interest reverse">
-                <img src="assets/nanoindentation.gif" alt="Mechanical Properties">
-                <div class="research-text">
-                    <div class="subheading-group">
-                        <span class="research-number">2.</span>
-                        <h3>Mechanical Properties</h3>
+                <div class="subheading-group">
+                    <span class="research-number">2.</span>
+                    <h3>Mechanical Properties of 2D Materials</h3>
+                </div>
+                <div class="content-row reverse">
+                    <img src="assets/nanoindentation.gif" alt="Mechanical Properties">
+                    <div class="research-text">
+                        <p>My research focuses on investigating the mechanical properties of two-dimensional (2D) materials through advanced computational simulations. By employing molecular dynamics-based nanoindentation simulations and density functional theory (DFT)-based pull-out simulations, I explore the structural and mechanical behavior of 2D materials under various loading conditions. This work aims to uncover fundamental insights into their strength, flexibility, and deformation mechanisms, paving the way for the design of robust nanomaterials for applications in flexible electronics, nanotechnology, and energy-efficient devices.</p>
                     </div>
-                    <p>My research focuses on investigating the mechanical properties of two-dimensional (2D) materials through advanced computational simulations. By employing molecular dynamics-based nanoindentation simulations and density functional theory (DFT)-based pull-out simulations, I explore the structural and mechanical behavior of 2D materials under various loading conditions. This work aims to uncover fundamental insights into their strength, flexibility, and deformation mechanisms, paving the way for the design of robust nanomaterials for applications in flexible electronics, nanotechnology, and energy-efficient devices.</p>
                 </div>
             </div>
         </section>
