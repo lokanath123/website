@@ -25,15 +25,17 @@
 
         .about-text {
             flex: 1;
+            max-width: 700px; /* Constrain width to ensure text wraps */
+            text-align: left; /* Default for container, won't override li */
         }
 
         .intro-highlight li {
             font-size: 1.4em;
             line-height: 1.6;
-        }
-
-        .intro-highlight li:nth-child(2) {
-            text-align: justify;
+            margin-bottom: 20px; /* Spacing for readability */
+            text-align: justify; /* Justify all list items */
+            text-justify: auto; /* Improve justification rendering */
+            padding-right: 10px; /* Ensure padding doesn't interfere */
         }
 
         .intro-title {
