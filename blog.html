@@ -7,22 +7,89 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<style>
-    header h1 {
-        font-size: 2.5em; /* Increase size for LOKANATH PATRA */
-        margin-bottom: 20px; /* Same gap as in other pages */
-    }
+    <style>
+        header h1 {
+            font-size: 2.5em; /* Increase size for LOKANATH PATRA */
+            margin-bottom: 20px; /* Same gap as in other pages */
+        }
 
-    nav a {
-        font-size: 1.2em; /* Increase size for navigation items */
-    }
+        nav a {
+            font-size: 1.2em; /* Increase size for navigation items */
+        }
 
-    main h2 {
-        font-size: 2.5em; /* Standardize heading size */
-        margin-bottom: 10px; /* Gap below heading */
-        text-align: center; /* Center heading */
-    }
-</style>
+        main h2 {
+            font-size: 2.5em; /* Standardize heading size */
+            margin-bottom: 10px; /* Gap below heading */
+            text-align: center; /* Center heading */
+        }
+
+        .blog-container {
+            max-width: 1000px; /* Match achievements.html */
+            margin: 0 auto; /* Center container */
+            padding: 20px; /* Add breathing room */
+            display: flex;
+            flex-direction: column; /* Stack posts vertically */
+            gap: 20px; /* Space between posts */
+        }
+
+        .blog-post {
+            max-width: 800px; /* Narrower for readability */
+            margin: 0 auto; /* Center card */
+            padding: 20px; /* Inner padding */
+            border: 1px solid #ddd; /* Subtle border */
+            border-radius: 8px; /* Rounded corners, match achievements.html */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+            background: #fff; /* White background for card */
+        }
+
+        .blog-post h3 {
+            font-size: 1.8em; /* Title size */
+            margin: 0 0 10px; /* Space below title */
+            text-align: left; /* Left-align title */
+        }
+
+        .blog-post h3 a {
+            color: #007bff; /* Blue link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .blog-post h3 a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .blog-post h3 a::after {
+            content: "↗"; /* External link indicator */
+            font-size: 0.8em;
+            margin-left: 5px;
+            vertical-align: super; /* Position as superscript */
+        }
+
+        .blog-meta {
+            font-size: 1.1em; /* Smaller than body text */
+            color: #666; /* Gray for contrast */
+            margin-bottom: 10px; /* Space below meta */
+        }
+
+        .blog-excerpt {
+            font-size: 1.3em; /* Match achievements.html body text */
+            text-align: justify; /* Justify text */
+            margin-bottom: 15px; /* Space below excerpt */
+        }
+
+        .blog-read-more {
+            display: inline-block; /* Button style */
+            background: #007bff; /* Blue background */
+            color: white; /* White text */
+            padding: 8px 16px; /* Padding */
+            border-radius: 4px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            font-size: 1.1em; /* Slightly smaller than body text */
+        }
+
+        .blog-read-more:hover {
+            background: #0056b3; /* Darker blue on hover */
+        }
+    </style>
     <header>
         <div class="container">
             <h1>LOKANATH PATRA</h1>
@@ -44,11 +111,14 @@
     <main>
         <section>
             <h2>Blog Posts</h2>
-            <ul>
-                <li><a href="#">Post 1: Title</a></li>
-                <li><a href="#">Post 2: Title</a></li>
-                <li><a href="#">Post 3: Title</a></li>
-            </ul>
+            <div class="blog-container">
+                <div class="blog-post">
+                    <h3><a href="https://patralokanath.blogspot.com/2025/01/from-ignorance-to-insight-my-journey.html" target="_blank" rel="noopener">From Ignorance to Insight: My Journey</a></h3>
+                    <p class="blog-meta">January 2025 | Tags: Personal Journey, Research Insights</p>
+                    <p class="blog-excerpt">This post reflects on my journey from initial challenges to profound insights in piezocatalysis, exploring the trials and triumphs that shaped the paper <a href="https://doi.org/10.1002/smll.202411828" target="_blank" rel="noopener" class="publication-link">DOI: 10.1002/smll.202411828</a>. From early struggles to breakthroughs in understanding piezocatalysis, it’s a story of perseverance and discovery.</p>
+                    <a href="https://patralokanath.blogspot.com/2025/01/from-ignorance-to-insight-my-journey.html" class="blog-read-more" target="_blank" rel="noopener">Read More</a>
+                </div>
+            </div>
         </section>
     </main>
 
