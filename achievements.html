@@ -17,7 +17,7 @@
 
         .content-row {
             display: flex;
-            align-items: stretch; /* Stretch image and text to match taller height */
+            align-items: center; /* Vertically center image and text */
         }
 
         .content-row.reverse {
@@ -27,15 +27,19 @@
         .image-container {
             display: flex;
             align-items: center; /* Center image vertically within container */
-            height: 100%; /* Match the height of the content row */
         }
 
         .image-container img {
-            width: auto; /* Scale width based on height */
-            max-width: 500px; /* Cap width to prevent oversized images */
-            height: 100%; /* Match the height of the content row */
+            width: 500px; /* Base width */
+            height: auto; /* Scale height proportionally */
             border-radius: 8px; /* Rounded corners */
             object-fit: contain; /* Preserve aspect ratio */
+            transform: scale(var(--scale-factor)); /* Apply scale factor */
+            transform-origin: left center; /* Anchor scaling for left-aligned images */
+        }
+
+        .content-row.reverse .image-container img {
+            transform-origin: right center; /* Anchor scaling for right-aligned images */
         }
 
         .content-row .image-container {
@@ -46,6 +50,14 @@
             margin-right: 0; /* Remove right margin for right-aligned images */
             margin-left: 20px; /* Space for right-aligned images */
         }
+
+        .image-1 { --scale-factor: 1.0; }
+        .image-2 { --scale-factor: 1.0; }
+        .image-3 { --scale-factor: 1.0; }
+        .image-4 { --scale-factor: 1.0; }
+        .image-5 { --scale-factor: 1.0; } /* Adjust for str_crr.jpg as needed */
+        .image-6 { --scale-factor: 1.0; }
+        .image-7 { --scale-factor: 1.0; }
 
         .research-text {
             flex: 1; /* Fill remaining space */
@@ -124,7 +136,7 @@
                 </div>
                 <div class="content-row">
                     <div class="image-container">
-                        <img src="assets/multiferroic.png" alt="Multiferroic Oxides">
+                        <img src="assets/multiferroic.png" alt="Multiferroic Oxides" class="image-1">
                     </div>
                     <div class="research-text">
                         <p>My research on multiferroic magnetoelectric oxides explores materials that simultaneously exhibit ferroelectric and magnetic properties, enabling unique coupling between electric and magnetic orders. By leveraging first-principles modeling and computational techniques like density functional theory, I investigate the structural, electronic, and magnetic characteristics of these oxides to uncover mechanisms driving giant magnetoelectric effects. My work focuses on designing novel multiferroic materials with enhanced coupling for applications in energy-efficient technologies, such as non-volatile memory, spintronics, and sensors, contributing to the advancement of sustainable, next-generation devices.</p>
@@ -138,7 +150,7 @@
                 </div>
                 <div class="content-row reverse">
                     <div class="image-container">
-                        <img src="assets/nanoindentation.gif" alt="Mechanical Properties">
+                        <img src="assets/nanoindentation.gif" alt="Mechanical Properties" class="image-2">
                     </div>
                     <div class="research-text">
                         <p>My research focuses on investigating the mechanical properties of two-dimensional (2D) materials through advanced computational simulations. By employing molecular dynamics-based nanoindentation simulations and density functional theory (DFT)-based pull-out simulations, I explore the structural and mechanical behavior of 2D materials under various loading conditions. This work aims to uncover fundamental insights into their strength, flexibility, and deformation mechanisms, paving the way for the design of robust nanomaterials for applications in flexible electronics, nanotechnology, and energy-efficient devices.</p>
@@ -152,7 +164,7 @@
                 </div>
                 <div class="content-row">
                     <div class="image-container">
-                        <img src="assets/neb.jpg" alt="Gas-Surface Interactions">
+                        <img src="assets/neb.jpg" alt="Gas-Surface Interactions" class="image-3">
                     </div>
                     <div class="research-text">
                         <p>My research employs nudged elastic band (NEB) calculations to investigate the interactions of gas molecules with layered materials and surfaces, as well as the energy barriers for ion movement within crystalline structures. By leveraging these computational techniques, I explore the adsorption, diffusion, and reaction mechanisms of gases on 2D materials and the dynamics of ion transport in solid-state systems. This work aims to provide critical insights into designing advanced materials for gas sensing, catalysis, and energy storage applications, contributing to the development of efficient and sustainable technologies.</p>
@@ -166,7 +178,7 @@
                 </div>
                 <div class="content-row reverse">
                     <div class="image-container">
-                        <img src="assets/magnetocaloric.gif" alt="Magnetocaloric Materials">
+                        <img src="assets/magnetocaloric.gif" alt="Magnetocaloric Materials" class="image-4">
                     </div>
                     <div class="research-text">
                         <p>My research on magnetocaloric materials focuses on simulating their thermomagnetic properties using spin-lattice dynamics driven by magnetic exchange energies calculated via density functional theory (DFT). By integrating these computational approaches, I investigate the magnetocaloric effect, which enables efficient magnetic refrigeration and thermal management. This work aims to uncover the microscopic mechanisms governing entropy changes under magnetic fields, facilitating the design of advanced materials for sustainable cooling technologies and energy-efficient systems.</p>
@@ -180,7 +192,7 @@
                 </div>
                 <div class="content-row">
                     <div class="image-container">
-                        <img src="assets/str_crr.jpg" alt="Strongly Correlated Systems">
+                        <img src="assets/str_crr.jpg" alt="Strongly Correlated Systems" class="image-5">
                     </div>
                     <div class="research-text">
                         <p>My research on strongly correlated oxides investigates the intricate electronic and magnetic structures that arise from strong electron-electron interactions in these materials. Using advanced computational methods, such as density functional theory combined with dynamical mean-field theory, I explore the complex interplay of spin, charge, and orbital degrees of freedom. This work aims to unravel the fundamental mechanisms driving phenomena like high-temperature superconductivity, metal-insulator transitions, and exotic magnetic phases, paving the way for the development of novel materials for quantum technologies and energy applications.</p>
@@ -194,7 +206,7 @@
                 </div>
                 <div class="content-row reverse">
                     <div class="image-container">
-                        <img src="assets/negf.jpg" alt="Thermal Transport in Nanoscale Devices">
+                        <img src="assets/negf.jpg" alt="Thermal Transport in Nanoscale Devices" class="image-6">
                     </div>
                     <div class="research-text">
                         <p>My research on thermal transport in nanoscale devices employs the Non-Equilibrium Green's Function (NEGF) method to model phonon-mediated heat conduction in nanostructured systems. By integrating harmonic and anharmonic interactions, I investigate phonon transmission, scattering, and interfacial thermal conductance in devices such as superlattices and heterostructures. This work aims to elucidate the mechanisms governing thermal transport at the nanoscale, enabling the design of advanced materials for efficient thermal management in microelectronics and energy conversion technologies.</p>
@@ -208,7 +220,7 @@
                 </div>
                 <div class="content-row">
                     <div class="image-container">
-                        <img src="assets/catalysis.png" alt="Materials for Catalytic Applications">
+                        <img src="assets/catalysis.png" alt="Materials for Catalytic Applications" class="image-7">
                     </div>
                     <div class="research-text">
                         <p>My research on materials for catalytic applications focuses on designing and optimizing catalysts for photocatalysis, hydrogen evolution reaction (HER), and oxygen evolution reaction (OER). Using computational methods such as density functional theory, I investigate the electronic structure, surface reactivity, and stability of nanostructured materials to enhance their catalytic performance. This work aims to develop efficient, sustainable catalysts for renewable energy applications, including solar-driven water splitting and green hydrogen production, contributing to the advancement of clean energy technologies.</p>
