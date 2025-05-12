@@ -11,7 +11,7 @@
         .research-interest {
             display: flex;
             flex-direction: column; /* Stack subheading above content */
-            margin: 0 auto 40px; /* Center with left/right margins, increased bottom margin */
+            margin: 0 auto 50px; /* Center with left/right margins, increased bottom margin */
             max-width: 1000px; /* Constrain width */
         }
 
@@ -26,10 +26,10 @@
 
         .research-interest img {
             width: 500px; /* Fixed width for images */
-            height: auto;
-            max-height: 300px; /* Cap height for uniformity */
+            height: auto; /* Scale height proportionally */
             border-radius: 8px; /* Rounded corners */
             margin-right: 20px; /* Space for left-aligned images */
+            object-fit: contain; /* Preserve aspect ratio */
         }
 
         .content-row.reverse img {
