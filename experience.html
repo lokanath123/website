@@ -26,28 +26,65 @@
         }
 
         .arrow-list li {
-            font-size: 1.3em; /* Match body text size from index.html */
-            margin-bottom: 10px; /* Consistent gap between list items */
+            font-size: 1.3em;
+            margin-bottom: 10px;
         }
 
         ol li {
-            font-size: 1.3em; /* Match body text size from index.html */
-            margin-bottom: 10px; /* Consistent gap between list items */
+            font-size: 1.3em;
+            margin-bottom: 10px;
         }
 
         header h1 {
-            font-size: 2.5em; /* Increase size for LOKANATH PATRA */
-            margin-bottom: 20px; /* Same gap as in other pages */
+            font-size: 2.5em;
+            margin-bottom: 20px;
         }
 
         nav a {
-            font-size: 1.2em; /* Increase size for navigation items */
+            font-size: 1.2em;
         }
 
         main h2 {
-            font-size: 2.5em; /* Standardize heading size */
-            margin-bottom: 10px; /* Gap below heading */
-            text-align: center; /* Center heading */
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .highlight-container {
+            display: flex;
+            align-items: flex-start;
+            margin: 0 50px;
+        }
+
+        .highlight-image {
+            flex: 0 0 40%;
+            margin-right: 20px;
+        }
+
+        .highlight-image img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        .highlight-text {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .highlight-text h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .highlight-text p {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .highlight-text a {
+            color: blue;
+            text-decoration: underline;
         }
     </style>
     <header>
@@ -70,7 +107,15 @@
 
     <main>
         <section>
-            <h2>Page under construction</h2>
+            <div class="highlight-container">
+                <div class="highlight-image">
+                    <img src="assets/images/paper1_image.jpg" alt="Figure from DFT Study of Sulfur Vacancies in MoS2 for Enhanced Piezocatalysis">
+                </div>
+                <div class="highlight-text">
+                    <h3>1. DFT Insights into Sulfur Vacancies for Enhanced Piezocatalysis in MoS2</h3>
+                    <p>DFT calculations reveal that sulfur vacancies in MoS2 alter its electronic structure, enhancing hydrogen adsorption and piezoelectric polarization. These changes significantly boost piezocatalytic H2 production. <a href="https://doi.org/10.1002/smll.202411828">Read more...</a></p>
+                </div>
+            </div>
         </section>
     </main>
 
