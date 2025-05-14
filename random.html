@@ -33,15 +33,14 @@
         }
 
         .gallery-image {
-            width: 300px; /* Fixed width for placeholder */
-            height: 200px; /* Placeholder height, images will use height: auto */
-            max-height: 300px; /* Cap height for actual images */
+            max-width: 300px; /* Changed from fixed width: 300px */
+            max-height: 300px; /* Kept to cap height */
             background: #ccc; /* Gray background for placeholder */
-            border-radius: 8px; /* Rounded corners, match achievements.html */
+            border-radius: 8px; /* Rounded corners */
         }
 
         .gallery-image img {
-            width: 100%; /* Ensure actual images fill container */
+            width: 100%; /* Fill container width */
             height: auto; /* Preserve aspect ratio */
             max-height: 300px; /* Cap height */
             object-fit: contain; /* Preserve aspect ratio */
@@ -62,8 +61,8 @@
             }
 
             .gallery-image {
-                width: 250px; /* Smaller width for mobile */
-                height: 166px; /* Maintain placeholder proportion */
+                max-width: 250px; /* Smaller width for mobile */
+                max-height: 250px; /* Adjusted for mobile */
             }
         }
     </style>
@@ -89,27 +88,39 @@
         <section>
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <img src="assets/minds_lab.jpg" alt="Figure 1: Research visualization" class="gallery-image">
+                    <div class="gallery-image">
+                        <img src="assets/minds_lab.jpg" alt="Figure 1: Research visualization">
+                    </div>
                     <p class="gallery-caption">With MiNDS Lab members at Georgia Institute of Technology</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/TEA_lab.png" alt="Figure 2: Photovoltaic cell model" class="gallery-image">
+                    <div class="gallery-image">
+                        <img src="assets/TEA_lab.png" alt="Figure 2: Photovoltaic cell model">
+                    </div>
                     <p class="gallery-caption">With TEA Lab members at University of California Santa Barbara</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/SCANMAT.jpg" alt="Figure 3: Smart adhesive experiment" class="gallery-image">
+                    <div class="gallery-image">
+                        <img src="assets/SCANMAT.jpg" alt="Figure 3: Smart adhesive experiment">
+                    </div>
                     <p class="gallery-caption">With Prof. Ravindran and group during SCANMAT visit in 2023</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/mariya.JPG" alt="Figure 4: Battery material analysis" class="gallery-image">
+                    <div class="gallery-image">
+                        <img src="assets/mariya.JPG" alt="Figure 4: Battery material analysis">
+                    </div>
                     <p class="gallery-caption">Delivered an invited talk in ICFM 2023 at Kayalpatnam, Tamil Nadu, India </p>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/APS.jpg" alt="Figure 5: Nanoscale device simulation" class="gallery-image">
+                    <div class="gallery-image">
+                        <img src="assets/APS.jpg" alt="Figure 5: Nanoscale device simulation">
+                    </div>
                     <p class="gallery-caption">At APS March Meeting 2024, Minneapolis</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/MTU.jpg" alt="Figure 6: Nanoscale device simulation" class="gallery-image">
+                    <div class="gallery-image">
+                        <img src="assets/MTU.jpg" alt="Figure 6: Nanoscale device simulation">
+                    </div>
                     <p class="gallery-caption">At APS March Meeting 2024, Minneapolis</p>
                 </div>
             </div>
