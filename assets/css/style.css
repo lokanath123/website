@@ -76,7 +76,7 @@ p{margin:0 0 1em}
 }
 
 /* ===== Home ===== */
-.intro h1{font-size:clamp(2.1rem,3.8vw,3.2rem);font-weight:400;line-height:1.12;letter-spacing:-.02em;max-width:24ch}
+.intro h1{font-size:clamp(1.6rem,2.6vw,2.2rem);font-weight:400;line-height:1.12;letter-spacing:-.02em;max-width:24ch}
 .intro .lede{font-size:1.15rem;margin-top:1.4rem;max-width:64ch}
 .intro p{max-width:66ch}
 .dispersion{margin:2.25rem 0 0;padding:.6rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
