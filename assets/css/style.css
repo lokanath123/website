@@ -183,3 +183,6 @@ p{margin:0 0 1em}
 .btn{display:inline-block;padding:.45rem .95rem;border:1px solid var(--rule);border-radius:999px;color:var(--ink);text-decoration:none;font-size:.93rem;background:var(--surface);white-space:nowrap}
 .btn:hover{border-color:var(--accent);color:var(--accent-ink)}
 .pubs.plain{list-style:none;padding-left:0}
+.overview{margin:2.25rem 0 0;padding:1rem;background:var(--surface);border:1px solid var(--rule);border-radius:4px}
+.overview img{width:100%;height:auto;max-height:460px;object-fit:contain;margin:0 auto}
+.overview figcaption{color:var(--muted);font-size:.92rem;margin-top:.75rem;text-align:center}
